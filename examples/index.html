@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuvo Login SDK Example</title>
+  </head>
+  <body>
+    <button id="show-popup">Login or Register</button>
+
+    <script src="../dist/popup-sdk.js"></script>
+    <script>
+      document.getElementById("show-popup").addEventListener("click", () => {
+        const popup = new PopupSDK.default({
+          title: "Hello World",
+          content: "This is a custom popup message.",
+        });
+        popup.show();
+      });
+    </script>
+  </body>
+</html>
